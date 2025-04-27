@@ -6,7 +6,7 @@ import datetime
 import logging
 
 # Define the application version and fetch the hostname from environment variables
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 HOSTNAME = os.environ.get("HOSTNAME", "unknown")
 
 
@@ -69,4 +69,4 @@ async def startup_event():
 
 # Main entry point to start the server
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=80)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
